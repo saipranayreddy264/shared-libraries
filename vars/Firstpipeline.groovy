@@ -14,7 +14,7 @@ def call(pipelineParams) {
         stage('addition') {
             steps {
                 script {
-                    echo "The addition of two numbers is: ${calc.add(10,20)}")
+                    echo "The addition of two numbers is: ${calc.add(10,20)}"
                 println calc.add(2,3)
                 }
             }
@@ -22,22 +22,23 @@ def call(pipelineParams) {
         }
         stage('Build') {
             steps {
-                echo Building the ${env.APPLICATION_NAME}
+                echo "Building the ${env.APPLICATION_NAME}"
                 // Add your build steps here
             }
         }
         stage('Test') {
             steps {
-                echo  Testing the ${env.APPLICATION_NAME}
+                echo  "Testing the ${env.APPLICATION_NAME}"
                 // Add your test steps here
             }
         }
         stage('Deploy') {
             steps {
-                echo Deploying the ${env.APPLICATION_NAME}
+                echo "Deploying the ${env.APPLICATION_NAME}"
                 // Add your deploy steps here
             }
         }
     }
    } 
+
 }

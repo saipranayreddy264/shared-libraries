@@ -1,4 +1,4 @@
-import com.saiacademy.builds.Calculator
+import com.saiacademy.builds.calculator
 def call(pipelineParams) {
    Calculator calc = new Calculator(this)
    pipeline {
@@ -42,4 +42,5 @@ def call(pipelineParams) {
    } 
 
 }
+
 

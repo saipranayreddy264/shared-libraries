@@ -1,15 +1,14 @@
 package com.saiacademy.builds
 
-//defining a class
-class Calculator {
-    def jenkins
+class Calculator implements Serializable {
 
-    //constucter
-    Calculator(jenkins){
-        this.jenkins = jenkins
+    def steps
+
+    Calculator(steps) {
+        this.steps = steps
     }
 
-    def add(firstNumber + secondNumber) {
+    int add(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber
     }
 }
